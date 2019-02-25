@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: TyiYsZCqMwe0TU6keI3O2F1LanJSC7/+8kJYeg6qd/A3FCFQck0rnPSzpMURFvH/T2e+pmcdc71LgojfL0YoDMFrp+YUtgCnp3uBpCzwnA2nos9LVRMZnN/+WRqnRvi/Z/tArszd7zfnIuHI9r/Iqtc/vbIf+F1B4Q548XYnPdksxyaZrXkGv6jbF64BNHGk1IVZpH7dZzxIHHWT+tagDSWNRMVGIir63YCUgAdQM2dtSEtkO6qY+vltR7GI7UDyf2DHrlywp0pPh4rUOaAY74a7x5KP4Z4y6I0erhV/BK5fqfaAEVORaQZrbN3HKYfT2AbVIcI3H/uUdD6TTTIe+ld1ZptUmyuNPrBbiGb1tlO6bso2ULzotHBq2w2i+6ifPqYoXIk0QfDPrWb/0AZv75kdqaNQx14s3ivwRg97J9GP4lnApZWdeCQgZAZmms50t8AZ0J5uAU2t1eKlcJSjcQQC2pj3vYqdWXdDqHTeCaPbdc+aMcEGAcrM1uS+kAKEoZADqp+XCgevTEXRfIeBPIqGc1xvKIgCbEFPUhCfTDWmI30/Sd+lF/3GVlbQ+0TlEAEtmWhHVW0011WN1dHRryMBejiaU+7YjBYC64TbcAUxh+TjVt5C6QglHNhooNaCJdYXaItZ7cYt3Zs3WCVGrLxgcjStPtm1kruqL96uCxU=
+  app: react-hot-cold-w-Tests
+  on:
+    repo: jsurt/react-hot-cold-w-Tests
